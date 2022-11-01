@@ -1,4 +1,4 @@
-module crud-books
+module github.com/antoniopenizollo/crud-books
 
 go 1.18
 

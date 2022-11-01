@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"crud-books/controllers"
+	"github.com/antoniopenizollo/crud-books/controllers"
 	"github.com/gin-gonic/gin"
 )
 

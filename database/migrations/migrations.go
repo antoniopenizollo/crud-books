@@ -1,7 +1,7 @@
 package migrations
 
 import (
-	"crud-books/models"
+	"github.com/antoniopenizollo/crud-books/models"
 	"gorm.io/gorm"
 )
 

@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"crud-books/database"
-	"crud-books/models"
+	"github.com/antoniopenizollo/crud-books/database"
+	"github.com/antoniopenizollo/crud-books/models"
 	"github.com/gin-gonic/gin"
 	"strconv"
 )

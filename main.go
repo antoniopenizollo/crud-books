@@ -1,8 +1,8 @@
 package main
 
 import (
-	"crud-books/database"
-	"crud-books/server"
+	"github.com/antoniopenizollo/crud-books/database"
+	"github.com/antoniopenizollo/crud-books/server"
 )
 
 func main() {

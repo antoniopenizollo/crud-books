@@ -1,7 +1,7 @@
 package server
 
 import (
-	"crud-books/server/routes"
+	"github.com/antoniopenizollo/crud-books/server/routes"
 	"github.com/gin-gonic/gin"
 	"log"
 )

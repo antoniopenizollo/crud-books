@@ -1,7 +1,7 @@
 package database
 
 import (
-	"crud-books/database/migrations"
+	"github.com/antoniopenizollo/crud-books/database/migrations"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"log"
