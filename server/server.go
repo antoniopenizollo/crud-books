@@ -1,6 +1,7 @@
 package server
 
 import (
+	"github.com/antoniopenizollo/crud-books/configs"
 	"github.com/antoniopenizollo/crud-books/server/routes"
 	"github.com/gin-gonic/gin"
 	"log"
@@ -13,7 +14,7 @@ type Server struct {
 
 func NewServer() Server {
 	return Server{
-		port:   "5000",
+		port:   configs.GetServerPort(),
 		server: gin.Default(),
 	}
 }

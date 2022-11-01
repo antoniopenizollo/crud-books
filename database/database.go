@@ -1,6 +1,8 @@
 package database
 
 import (
+	"fmt"
+	"github.com/antoniopenizollo/crud-books/configs"
 	"github.com/antoniopenizollo/crud-books/database/migrations"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -11,7 +13,11 @@ import (
 var db *gorm.DB
 
 func StartDB() {
-	str := "host=localhost port=5432 user=postgres dbname=books password=admin sslmode=disable"
+
+	conf := configs.GetDB()
+
+	str := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable",
+		conf.Host, conf.Port, conf.User, conf.Database, conf.Pass)
 
 	database, err := gorm.Open(postgres.Open(str), &gorm.Config{})
 
